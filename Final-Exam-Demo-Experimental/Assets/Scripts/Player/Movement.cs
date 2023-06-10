@@ -33,6 +33,12 @@ public class Movement : MonoBehaviour
     private bool MakeDash;
     private bool IsDashing;
 
+    [Header("Hair Control")]
+    [SerializeField] private HairAnchor _HairAnchor;
+    [SerializeField] private Vector2 IDLEOffSet;
+    [SerializeField] private Vector2 RunOffSet;
+    [SerializeField] private Vector2 JumpOffSet;
+    [SerializeField] private Vector2 FallOffSet;
     //[Header("CoyoteTime")]
     //[SerializeField] private float CoyoteTime = 1;
     //[SerializeField] private float CoyoteTimeCounter;
@@ -113,7 +119,38 @@ public class Movement : MonoBehaviour
     {
         OnFloor = Physics2D.OverlapBox(WalkController.position, BoxDimension, 0f, OnWalk);
         Move(Horizontal * Time.fixedDeltaTime, Jump);
+        UpdateHairOffset();
         Jump = false;
+    }
+    private void UpdateHairOffset()
+    {
+        Vector2 currentOffSet = Vector2.zero;
+        //IDLE
+        if (_rb.velocity.x == 0 && _rb.velocity.y == 0)
+        {
+            currentOffSet = IDLEOffSet;
+        }
+        //JUMP
+        else if (_rb.velocity.y > 0)
+        {
+            currentOffSet = JumpOffSet;
+        }
+        //FALL
+        else if (_rb.velocity.y < 0)
+        {
+            currentOffSet = FallOffSet;
+        }
+        //RUN
+        else if (_rb.velocity.x != 0)
+        {
+            currentOffSet = RunOffSet;
+        }
+        //FLIP X
+        if (!WatchRight)
+        {
+            currentOffSet.x = currentOffSet.x * -1;
+        }
+        _HairAnchor.Offset = currentOffSet;
     }
     private void Move(float move, bool jump)
     {
@@ -129,6 +166,7 @@ public class Movement : MonoBehaviour
             RoundSprite();
         }
     }
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.tag == "World")
