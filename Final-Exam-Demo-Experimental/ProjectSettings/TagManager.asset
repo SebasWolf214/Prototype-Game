@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Teleporter
   - World
+  - Spring
   layers:
   - Default
   - TransparentFX

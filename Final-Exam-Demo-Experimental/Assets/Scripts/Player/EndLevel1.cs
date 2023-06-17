@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EasyTransition;
-public class EndLevel : MonoBehaviour
+public class EndLevel1 : MonoBehaviour
 {
     public EasyTransition.TransitionManager transitionManager;
     private void OnTriggerEnter2D(Collider2D other)
@@ -10,7 +10,7 @@ public class EndLevel : MonoBehaviour
         var player = other.GetComponent<Movement>();
         if (player != null)
         {
-            transitionManager.LoadScene("StartMenu", "CircleWipe", 0);
+            transitionManager.LoadScene("Level 2", "CircleWipe", 0);
         }
     }
 }

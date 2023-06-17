@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class Movement : MonoBehaviour
 {
     private Collider2D _coll;
@@ -9,8 +9,17 @@ public class Movement : MonoBehaviour
     private Vector2 _respawn;
     private Animator Anime;
 
+    [Header("AudioFX")]
+    private AudioSource AudioFX;
+    [SerializeField] public AudioClip DashFX;
+    [SerializeField] public AudioClip DieFX;
+    [SerializeField] public AudioClip JumpFX;
+
+
     [Header("Movimiento")]
     private float Horizontal = 0f;
+    private float Vertical = 0f;
+
     [SerializeField] private float MovementVelocity;
     [SerializeField] private float MovmentSoft;
     [SerializeField] private bool Active = true;
@@ -39,12 +48,14 @@ public class Movement : MonoBehaviour
     [SerializeField] private Vector2 RunOffSet;
     [SerializeField] private Vector2 JumpOffSet;
     [SerializeField] private Vector2 FallOffSet;
+
     //[Header("CoyoteTime")]
     //[SerializeField] private float CoyoteTime = 1;
     //[SerializeField] private float CoyoteTimeCounter;
 
     [Header("Particulas")]
     [SerializeField] private ParticleSystem DashParticles;
+    [SerializeField] private ParticleSystem JumpParticles;
     //Transition Muerte
     public string transitionID;
     public float loadDelay;
@@ -56,6 +67,8 @@ public class Movement : MonoBehaviour
         Anime = GetComponent<Animator>();
         //Collider
         _coll = GetComponent<Collider2D>();
+        //Audio Things
+        AudioFX = GetComponent<AudioSource>();
         //Respawn
         SetRespawnPoint(transform.position);
     }
@@ -68,6 +81,7 @@ public class Movement : MonoBehaviour
         }
         //Movimiento
         Horizontal = Input.GetAxisRaw("Horizontal") * MovementVelocity;
+        Vertical = Input.GetAxisRaw("Vertical");
         //ANIMACIONES
         if (Horizontal > 0 || Horizontal < 0)
         {
@@ -77,14 +91,23 @@ public class Movement : MonoBehaviour
         {
             Anime.SetBool("Move", false);
         }
-        //Saltar
+        if (OnFloor && Vertical < 0)
+        {
+            Anime.SetBool("Down", true);
+        }
+        else
+        {
+            Anime.SetBool("Down", false);
+        }
+        //SALTAR
         if (Input.GetButtonDown("Jump"))
         {
             //SALTO ACTIACION
             if (OnFloor)
             {
-                //OnFloor = false;
                 Anime.SetBool("Jump", true);
+                JumpParticles.Play();
+                AudioFX.PlayOneShot(JumpFX);
                 _rb.AddForce(new Vector2(0f, JumpForce));
 
             }
@@ -93,6 +116,7 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Dash") && MakeDash)
         {
             Anime.SetBool("Dash", true);
+            AudioFX.PlayOneShot(DashFX);
             IsDashing = true;
             MakeDash = false;
             DashDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -107,7 +131,6 @@ public class Movement : MonoBehaviour
         {
             GhostEffect.me.GhostSkill();
             _rb.velocity = DashDir.normalized * DashVelocity;
-
             return;
         }
         if (OnFloor)
@@ -171,9 +194,16 @@ public class Movement : MonoBehaviour
     {
         if (other.collider.tag == "World")
         {
+            JumpParticles.Play();
             OnFloor = true;
             Anime.SetBool("Jump", false);
         }
+        if (other.collider.tag == "Spring")
+        {
+            MakeDash = true;
+            Anime.SetBool("Jump", false);
+        }
+
     }
     private void OnCollisionExit2D(Collision2D other)
     {
@@ -207,6 +237,7 @@ public class Movement : MonoBehaviour
     public void Die()
     {
         CameraShake.Shake(0.5f, 0.25f);
+        AudioFX.PlayOneShot(DieFX);
         Anime.SetTrigger("Die");
         Active = false;
         _coll.enabled = false;
