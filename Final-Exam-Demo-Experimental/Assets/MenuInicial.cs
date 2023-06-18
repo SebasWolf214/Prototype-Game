@@ -11,11 +11,19 @@ public class MenuInicial : MonoBehaviour
     public float loadDelay;
     public EasyTransition.TransitionManager transitionManager;
     public GameObject OpcionsFirst;
+    public GameObject LevelsFirst;
+
     public void Jugar()
     {
         transitionManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, transitionID, loadDelay);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void Levels()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(LevelsFirst);
+    }
+
     public void Opcions()
     {
         EventSystem.current.SetSelectedGameObject(null);

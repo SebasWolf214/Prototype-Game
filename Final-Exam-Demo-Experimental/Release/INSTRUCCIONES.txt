@@ -1,12 +1,18 @@
 Abrir el archivo que dice:
-Final-Exam-Demo
+Final Exam (Demo-Experimental)
 
 CONTROLES:
-- A W S D
+Manejo
+- A W S D - FLECHAS
 
+Salto
 - SpaceBar
 
-- Shift derecho
+Dash
+- Shift derecho - Shift Izquierdo
+
+Este juego esta diseñado para jugar con control en su defecto.
+Pero se recomienda teclado
 
 LINK PARA FEEDBACK:
 
