@@ -29,7 +29,7 @@ Prepárate para embarcarte en esta aventura experimental. Pon a prueba tus habil
 ## **Versión de Unity**
 La versión de Unity utilizada en este proyecto fue la *2021.3.23f1.*
 
-![Unity Version](https://github.com/searcilas/recursos/blob/7c73f34a8e85301bc73393395e0f985e96425d7d/img2.png)
+![Unity Version](https://github.com/searcilas/recursos/blob/6b062e654de02395f1e5249b0e88794274f7485e/img2.png)
 
 ## **Paquetes extra**
 Además de la versión de Unity 2021.3.23f1, utilizamos paquetes extra para mejorar la calidad gráfica del juego. En particular, utilizamo algunos recursos de Tilemap proporcionados por el artista Nate Kling.
