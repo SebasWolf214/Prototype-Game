@@ -65,4 +65,3 @@ Sebastián Arcila Sánchez ([searcilas](mailto:searcilas@unal.edu.co))
 Juan José Tobón Zapata ([jtobonz](mailto:jtobonz@unal.edu.co))
 
 Juliana Andrea Bedoya Salazar ([jubedoyas](mailto:jubedoyas@unal.edu.co))
-
