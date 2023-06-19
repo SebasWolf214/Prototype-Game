@@ -10,7 +10,7 @@
 
 "Final Exam (Demo Experimental)" es un intrigante videojuego con gráficos estilizados creado en Unity que ofrece una experiencia única y desafiante. Inspirado en el estilo de juego de "Celeste", este juego te sumerge en una aventura llena de emoción y obstáculos cautivadores. 
 
-El juego cuenta con un sistema de movimiento inspirado en el popular "dash" del videojuego "Celeste". Los jugadores podrán realizar rápidos y elegantes movimientos de *"dash"* para sortear obstáculos y superar desafíos en cada nivel. Además, se incluye la mecánica de *"coyote time"*, permitiendo a los jugadores realizar acciones justo después de dejar una plataforma, lo que añade un elemento de precisión y estrategia a la jugabilidad Encontrarás dos tipos de plataformas: las plataformas que reaccionan al contacto, lo que requerirá una planificación cuidadosa para evitar caer al vacío, y las plataformas estables, que te brindarán una base segura para avanzar.
+El juego cuenta con un sistema de movimiento inspirado en el popular "dash" del videojuego "Celeste". Los jugadores podrán realizar rápidos y elegantes movimientos de *"dash"* para sortear obstáculos y superar desafíos en cada nivel. Además, se incluye la mecánica de *"coyote time"*, permitiendo a los jugadores realizar acciones justo después de dejar una plataforma, lo que añade un elemento de precisión y estrategia a la jugabilidad. Encontrarás dos tipos de plataformas: las plataformas que reaccionan al contacto, lo que requerirá una planificación cuidadosa para evitar caer al vacío, y las plataformas estables, que te brindarán una base segura para avanzar.
 
 ![Dash GIF](https://github.com/searcilas/recursos/blob/49f04679f043b1b862dc1b735e2c2930f72f8678/gif1.gif)
 
@@ -18,7 +18,7 @@ Un sistema de pantallas dinámico se implementa para asegurar una progresión fl
 
 ![Sistema de Pantallas GIF](https://github.com/searcilas/recursos/blob/0f802a35e11fce488e610d788a9b9e6902dc0797/gif2.gif)
 
-En lugar de recolectar fresas, los jugadores se encontrarán con fascinantes notas que se convertirán en su principal objetivo. Cada nota recolectada contribuirá a su puntaje, desbloqueando recompensas especiales y desafiando a los jugadores a alcanzar la puntuación máxima. ¡Demuestra tu habilidad y precisión para alcanzar la puntuación más alta en cada nivel!
+En lugar de recolectar fresas, los jugadores se encontrarán con fascinantes notas que se convertirán en su principal objetivo. Cada nota recolectada contribuirá a su puntaje, desafiando a los jugadores a alcanzar la puntuación máxima. ¡Demuestra tu habilidad y precisión para alcanzar la puntuación más alta en cada nivel!
 
 ![Recolección de Notas GIF](https://github.com/searcilas/recursos/blob/0f802a35e11fce488e610d788a9b9e6902dc0797/gif3.gif)
 
