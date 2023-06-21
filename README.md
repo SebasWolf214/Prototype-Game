@@ -23,10 +23,10 @@ Los jugadores se encontrarán con notas que se convertirán en su principal obje
 
 ![Recolección de Notas GIF](https://github.com/searcilas/recursos/blob/0f802a35e11fce488e610d788a9b9e6902dc0797/gif3.gif)
 
-Un aspecto destacado de "Final Exam (Demo Experimental)" es su soundtrack producido exclusivamente para el proyecto. Cada nivel está acompañado de una canción específica, producidas por:
-THEALBERTOZ
-Binary Mode
-TigerWolfs
+Un aspecto destacado de "Final Exam (Demo Experimental)" es su soundtrack producido exclusivamente para el proyecto. Cada nivel está acompañado de una canción específica, producidas por:  
+THEALBERTOZ  
+Binary Mode  
+TigerWolfs  
 
 ## **Versión de Unity**
 La versión de Unity utilizada en este proyecto fue la *2021.3.23f1.*
@@ -45,16 +45,16 @@ Puedes descargar los paquetes de Tilemap en el siguiente enlace: [Descargar paqu
 Agradecemos a Nate Kling por su trabajo y contribución al proyecto. Puedes encontrar más información sobre él y sus obras en su cuenta de Twitter: [@NateKling](https://twitter.com/NateKling).
 
 ## **OST & FX**
-El oficial soundtrack de "Final Exam (Demo Experimental)" fue producido, específicamente para el juego, contando con la participación de tres artistas:
+El oficial soundtrack de "Final Exam (Demo Experimental)" fue producido, específicamente para el juego, contando con la participación de tres artistas:  
 
-**Musica**
-THEALBERTOZ - disc0 very
-Binary Mode - SAPHIR
-THEALBERTOZ, Binary Mode - 2012 nvm
-TigerWolfs - FINAL EXAM INTRO
-
-**Sound Design & FX**
-TigerWolfs - Sound Design & Sound FX
+**Musica**  
+THEALBERTOZ - disc0 very  
+Binary Mode - SAPHIR  
+THEALBERTOZ, Binary Mode - 2012 nvm  
+TigerWolfs - FINAL EXAM INTRO  
+  
+**Sound Design & FX**  
+TigerWolfs - Sound Design & Sound FX  
 
 ## **Gameplay**
 Si deseas ver un poco del gameplay del juego "Final Exam (Demo Experimental)" y tener una idea de lo que te espera, puedes disfrutar de un emocionante video en el siguiente enlace: [Enlace al video de gameplay](https://www.youtube.com/watch?v=zyAvYdG2Tfk)
@@ -63,7 +63,7 @@ Este video funciona como una pequeña muestra del juego con algunos momentos des
 
 ## **Pixel Art**
 A excepcion de la paleta utilizada para el Tilemap la mayoria de sprites fueron hechos a mano por el equipo usando el programa Aseprite.
-Aqui algunas referencias
+Aqui algunas referencias  
 --- meter imagenes de los diseños
 
 Para mas informacion del programa ingresa aquí(enlace a Asesprite) https://www.aseprite.org
