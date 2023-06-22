@@ -69,7 +69,7 @@ A excepcion de la paleta utilizada para el Tilemap la mayoria de sprites fueron 
 
 ![Referencia 2](https://github.com/searcilas/recursos/blob/03eefe624fa54b8106a7c7f0973bba2eb52b3477/img4.jpeg)
 
-Para mas informacion del programa [ingresa aquí]([enlace a Asesprite)](https://www.aseprite.org).
+Para mas informacion del programa [ingresa aquí](https://www.aseprite.org).
 
 ## **Integrantes**
 Sebastián Agudelo Osorio ([seagudeloo](mailto:seagudeloo@unal.edu.co))
