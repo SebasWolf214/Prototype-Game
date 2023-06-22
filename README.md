@@ -1,4 +1,5 @@
-# **Final Exam (Demo Experimental)**
+![Final Exam (Demo Experimental)](https://github.com/searcilas/recursos/blob/5689681820d1b8fceedc3879283116aca5b29167/img5.jpeg)
+
 - [Descripción del proyecto](#descripción-del-proyecto)
 - [Versión de Unity](#versión-de-unity)
 - [Paquetes extra](#paquetes-extra)
@@ -63,7 +64,9 @@ Este video funciona como una pequeña muestra del juego con algunos momentos des
 
 ## **Pixel Art**
 A excepcion de la paleta utilizada para el Tilemap la mayoria de sprites fueron hechos a mano por el equipo usando el programa Aseprite. Aquí algunas referencias:
+
 ![Referencia 1](https://github.com/searcilas/recursos/blob/03eefe624fa54b8106a7c7f0973bba2eb52b3477/img3.jpeg)
+
 ![Referencia 2](https://github.com/searcilas/recursos/blob/03eefe624fa54b8106a7c7f0973bba2eb52b3477/img4.jpeg)
 
 Para mas informacion del programa [ingresa aquí]([enlace a Asesprite)](https://www.aseprite.org).
