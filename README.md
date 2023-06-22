@@ -1,4 +1,4 @@
-![Final Exam (Demo Experimental)](https://github.com/searcilas/recursos/blob/5689681820d1b8fceedc3879283116aca5b29167/img5.jpeg)
+![Final Exam (Demo Experimental)](https://github.com/searcilas/recursos/blob/3f8028b07a22beb31f9a43801b824d06f29eeab3/img6.png)
 
 - [Descripción del proyecto](#descripción-del-proyecto)
 - [Versión de Unity](#versión-de-unity)
