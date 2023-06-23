@@ -3,7 +3,7 @@
 - [Descripción del proyecto](#descripción-del-proyecto)
 - [Versión de Unity](#versión-de-unity)
 - [Paquetes extra](#paquetes-extra)
-- [Soundtrack](#soundtrack)
+- [OST & FX](#soundtrack)
 - [Gameplay](#gameplay)
 - [Pixel Art](#pixel-art)
 - [Integrantes](#integrantes)
