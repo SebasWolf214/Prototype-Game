@@ -3,7 +3,7 @@
 - [Descripción del proyecto](#descripción-del-proyecto)
 - [Versión de Unity](#versión-de-unity)
 - [Paquetes extra](#paquetes-extra)
-- [OST & FX](#ost-&-fx)
+- [OST y FX](#ost-y-fx)
 - [Gameplay](#gameplay)
 - [Pixel Art](#pixel-art)
 - [Integrantes](#integrantes)
@@ -45,7 +45,7 @@ Puedes descargar los paquetes de Tilemap en el siguiente enlace: [Descargar paqu
 
 Agradecemos a Nate Kling por su trabajo y contribución al proyecto. Puedes encontrar más información sobre él y sus obras en su cuenta de Twitter: [@NateKling](https://twitter.com/NateKling).
 
-## **OST & FX**
+## **OST y FX**
 El oficial soundtrack de "Final Exam (Demo Experimental)" fue producido, específicamente para el juego, contando con la participación de tres artistas:  
 
 **Musica**  
